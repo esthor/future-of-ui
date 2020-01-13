@@ -88,6 +88,12 @@ What's the benefit of a sound type system?
 - Kill bugs before you run the program
 - Documentation of your program, made for free
 
+### HOOKS
+
+What?
+How?
+But do we ask why? -> easier to reason about
+People obsess about performance. That's naive.
 React Hooks vs. Classes -> ReasonReact SO MUCH WIN (see cheng lou's reasonconf talk, ~20mins in)
 
 ## Reason
