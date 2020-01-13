@@ -448,7 +448,7 @@ function Presentation(Props) {
                       fit: false,
                       children: "THE 2010s"
                     }), React.createElement(Spectacle.Notes, {
-                      children: ""
+                      children: "Node & npm"
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -461,7 +461,7 @@ function Presentation(Props) {
                       fit: false,
                       children: "THE 2010s"
                     }), React.createElement(Spectacle.Notes, {
-                      children: ""
+                      children: "CoffeeScript"
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -474,7 +474,7 @@ function Presentation(Props) {
                       fit: false,
                       children: "THE 2010s"
                     }), React.createElement(Spectacle.Notes, {
-                      children: ""
+                      children: "FaxJS"
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -487,7 +487,7 @@ function Presentation(Props) {
                       fit: false,
                       children: "THE 2010s"
                     }), React.createElement(Spectacle.Notes, {
-                      children: ""
+                      children: "React"
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -500,7 +500,72 @@ function Presentation(Props) {
                       fit: false,
                       children: "THE 2010s"
                     }), React.createElement(Spectacle.Notes, {
-                      children: ""
+                      children: "Flux & Redux"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "React pushed us towards funcational, declarative UIs, with immutability baked in to the patterns and best practices. But not everyone embraced React's functional patterns and you could still write mutations."
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "ImmerJS"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "THE 2010s"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "Bundlers (webpack)"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "THE 2010s"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "Babel"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "THE 2010s"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "ESLint & Prettier"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "THE 2010s"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "TypeScript, Flow"
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",

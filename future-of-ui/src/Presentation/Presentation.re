@@ -267,23 +267,43 @@ let make = () => {
     </Slide>
     <Slide transition=["slide"]>
       <Text textSize="100" textColor fit=false> {rs("THE 2010s")} </Text>
-      <Notes> {rs("")} </Notes>
+      <Notes> {rs("Node & npm")} </Notes>
     </Slide>
     <Slide transition=["slide"]>
       <Text textSize="100" textColor fit=false> {rs("THE 2010s")} </Text>
-      <Notes> {rs("")} </Notes>
+      <Notes> {rs("CoffeeScript")} </Notes>
     </Slide>
     <Slide transition=["slide"]>
       <Text textSize="100" textColor fit=false> {rs("THE 2010s")} </Text>
-      <Notes> {rs("")} </Notes>
+      <Notes> {rs("FaxJS")} </Notes>
     </Slide>
     <Slide transition=["slide"]>
       <Text textSize="100" textColor fit=false> {rs("THE 2010s")} </Text>
-      <Notes> {rs("")} </Notes>
+      <Notes> {rs("React")} </Notes>
     </Slide>
     <Slide transition=["slide"]>
       <Text textSize="100" textColor fit=false> {rs("THE 2010s")} </Text>
-      <Notes> {rs("")} </Notes>
+      <Notes> {rs("Flux & Redux")} </Notes>
+    </Slide>
+    <Slide transition=["slide"]>
+      <Text textSize="100" textColor fit=false> {rs("React pushed us towards funcational, declarative UIs, with immutability baked in to the patterns and best practices. But not everyone embraced React's functional patterns and you could still write mutations.")} </Text>
+      <Notes> {rs("ImmerJS")} </Notes>
+    </Slide>
+    <Slide transition=["slide"]>
+      <Text textSize="100" textColor fit=false> {rs("THE 2010s")} </Text>
+      <Notes> {rs("Bundlers (webpack)")} </Notes>
+    </Slide>
+    <Slide transition=["slide"]>
+      <Text textSize="100" textColor fit=false> {rs("THE 2010s")} </Text>
+      <Notes> {rs("Babel")} </Notes>
+    </Slide>
+    <Slide transition=["slide"]>
+      <Text textSize="100" textColor fit=false> {rs("THE 2010s")} </Text>
+      <Notes> {rs("ESLint & Prettier")} </Notes>
+    </Slide>
+    <Slide transition=["slide"]>
+      <Text textSize="100" textColor fit=false> {rs("THE 2010s")} </Text>
+      <Notes> {rs("TypeScript, Flow")} </Notes>
     </Slide>
     <Slide transition=["slide"]>
       <Image src=stacksplit1 width="100vw" />
