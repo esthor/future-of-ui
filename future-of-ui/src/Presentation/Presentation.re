@@ -718,7 +718,7 @@ let make = () => {
       <Text textSize="100" textColor fit=false>
         {rs("Reason React Native")}
       </Text>
-      <Notes> {rs("React Navigation bindings. I'm writing a production app in Reason React Native, and my biggest fear was being limited in what libs I could use. Something about 'use any packages from the js world' somehow didn't click right away. Now, I spend almost no time wrapping a library (if there are reason bindings) and spend way more time choosing libs and writing ui.")} </Notes>
+      <Notes> {rs("Init a new project. Watch bsb go!")} </Notes>
     </Slide>
     <Slide transition=["slide"]>
       <Text textSize="100" textColor fit=false>

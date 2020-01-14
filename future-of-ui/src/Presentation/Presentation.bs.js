@@ -1086,7 +1086,7 @@ function Presentation(Props) {
                       fit: false,
                       children: "Reason React Native"
                     }), React.createElement(Spectacle.Notes, {
-                      children: "React Navigation bindings. I'm writing a production app in Reason React Native, and my biggest fear was being limited in what libs I could use. Something about 'use any packages from the js world' somehow didn't click right away. Now, I spend almost no time wrapping a library (if there are reason bindings) and spend way more time choosing libs and writing ui."
+                      children: "Init a new project. Watch bsb go!"
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
