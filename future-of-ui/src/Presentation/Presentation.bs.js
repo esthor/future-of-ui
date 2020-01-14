@@ -18,6 +18,8 @@ var fontConfig = { };
 
 var theme = Spectacle.themes.defaultTheme(colorConfig, fontConfig);
 
+var textSize = "30";
+
 var textColor = "rgb(224, 226, 229)";
 
 var lineHeight = "2";
@@ -41,6 +43,8 @@ var timeline2 = ( require('../assets/timeline2.png'));
 var stacksplit1 = ( require('../assets/stacksplit1.png'));
 
 var stacksplit2 = ( require('../assets/stacksplit2.png'));
+
+var reason = ( require('../assets/reason.png'));
 
 function Presentation$IntroNotes(Props) {
   return React.createElement("div", undefined, React.createElement("p", undefined, "So, this is a fairly broad scope for a talk."), React.createElement("p", undefined, "'UI Programming' is a giant topic.~\n\n          So, what I'm going to attempt to do here is talk about what I think are relevant parts to this topic specifically for React devs and people working on modern apps written in JavaScript."));
@@ -210,37 +214,6 @@ function Presentation(Props) {
                     /* [] */0
                   ],
                   children: null
-                }, React.createElement(Spectacle.Table, {
-                      style: style,
-                      children: React.createElement(Spectacle.TableRow, {
-                            style: style,
-                            children: null
-                          }, React.createElement(Spectacle.TableItem, {
-                                style: style,
-                                children: React.createElement(Spectacle.Image, {
-                                      width: "30vw",
-                                      src: etn
-                                    })
-                              }), React.createElement(Spectacle.TableItem, {
-                                style: style,
-                                children: React.createElement(Spectacle.Image, {
-                                      width: "30vw",
-                                      src: etngif
-                                    })
-                              }))
-                    }), React.createElement(Spectacle.Text, {
-                      textSize: "40",
-                      textColor: textColor,
-                      fit: false,
-                      children: "DHTML!"
-                    }), React.createElement(Spectacle.Notes, {
-                      children: "...And some kid made some crappy websites with lots of cash-for-clicks links. I brought this up, not to show my horrible pre-teen design sense, but to point out a scary trend. I wrote this in Frontpage. That was a Microsoft product. Microsoft wanted you to write pages in DHTML. Yeah, WTF is that? It was Microsoft's proprietary branding of HTML, CSS and JS working together. They called it Dynamic HTML. And it's this kind of splintering that can plague a platform and would become a huge problem in the following decade."
-                    })), React.createElement(Spectacle.Slide, {
-                  transition: /* :: */[
-                    "slide",
-                    /* [] */0
-                  ],
-                  children: null
                 }, React.createElement(Spectacle.Text, {
                       textSize: "100",
                       textColor: textColor,
@@ -383,7 +356,7 @@ function Presentation(Props) {
                       fit: false,
                       children: "(2000s EDITION)"
                     }), React.createElement(Spectacle.Notes, {
-                      children: "So, how were we writing and structuring non-trivial web apps in the 1990s?"
+                      children: "So, how were we writing and structuring non-trivial web apps in the 2000s?"
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -428,6 +401,26 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
+                      children: "HOW SHOULD A WEB APP CODE BE STRUCTURED?"
+                    }), React.createElement(Spectacle.Appear, {
+                      children: React.createElement(Spectacle.Text, {
+                            textSize: "100",
+                            textColor: textColor,
+                            fit: false,
+                            children: "MVC"
+                          })
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "MVC became popular in the 90s and in the 2000s became default way to architect web apps"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
                       children: "ES5"
                     }), React.createElement(Spectacle.Text, {
                       textSize: "100",
@@ -446,22 +439,9 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
-                      children: "THE 2010s"
-                    }), React.createElement(Spectacle.Notes, {
                       children: "Node & npm"
-                    })), React.createElement(Spectacle.Slide, {
-                  transition: /* :: */[
-                    "slide",
-                    /* [] */0
-                  ],
-                  children: null
-                }, React.createElement(Spectacle.Text, {
-                      textSize: "100",
-                      textColor: textColor,
-                      fit: false,
-                      children: "THE 2010s"
                     }), React.createElement(Spectacle.Notes, {
-                      children: "CoffeeScript"
+                      children: "Node & npm and CommonJS modules really changed the way we develop code. Run JS on the server, run it in the client. Look for a library on npm, `npm install` nd now you're cooking with gas. The 2010s was like an explosive rebirth of JS."
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -472,9 +452,9 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
-                      children: "THE 2010s"
+                      children: "CoffeeScript & Language Extension"
                     }), React.createElement(Spectacle.Notes, {
-                      children: "FaxJS"
+                      children: "CoffeeScript brought us a lot of language features that the community was tired of waiting around for. Many of CoffeeScript's features are in the language now"
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -485,9 +465,9 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
-                      children: "THE 2010s"
+                      children: "FAXJS"
                     }), React.createElement(Spectacle.Notes, {
-                      children: "React"
+                      children: "Anyone ever heard of this? I want to take a look at this. Look at the example MainComponet and PersonDisplayer functions. Look at projectManager/createFaxProjectHere.js. Looks familiar? This is Jordan Walke's React prototype. He would go on to build the framework and release it in 2013."
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -498,9 +478,9 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
-                      children: "THE 2010s"
+                      children: "REACT"
                     }), React.createElement(Spectacle.Notes, {
-                      children: "Flux & Redux"
+                      children: "React was hugely influential. Declarative UI, Virtual DOM, Unidirectional Data Flow. Reduce side effects. Make it easy and fun to write UI again."
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -511,9 +491,9 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
-                      children: "React pushed us towards funcational, declarative UIs, with immutability baked in to the patterns and best practices. But not everyone embraced React's functional patterns and you could still write mutations."
+                      children: "FLUX (& REDUX)"
                     }), React.createElement(Spectacle.Notes, {
-                      children: "ImmerJS"
+                      children: "Flux & Redux. One way data flow, through a dispatcher, create a new store, all through an uninterruptable function call. Reduce side effects."
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -524,9 +504,14 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
-                      children: "THE 2010s"
+                      children: "CROSS PLATFORM JS"
+                    }), React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "JS EVERYWHERE"
                     }), React.createElement(Spectacle.Notes, {
-                      children: "Bundlers (webpack)"
+                      children: "Electron, React Native (Jordan Walke again)"
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -537,7 +522,30 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
-                      children: "THE 2010s"
+                      children: "BUNDLERS (WEBPACK, ET AL)"
+                    }), React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "Why?"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "Bundlers (webpack). Why do we need them? CommonJS+Node....but now we have ESM support...will webpack be dead soon?"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "Babel"
+                    }), React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "Why?"
                     }), React.createElement(Spectacle.Notes, {
                       children: "Babel"
                     })), React.createElement(Spectacle.Slide, {
@@ -550,7 +558,12 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
-                      children: "THE 2010s"
+                      children: "ESLINT & PRETTIER"
+                    }), React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "Why?"
                     }), React.createElement(Spectacle.Notes, {
                       children: "ESLint & Prettier"
                     })), React.createElement(Spectacle.Slide, {
@@ -563,7 +576,7 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
-                      children: "THE 2010s"
+                      children: "Typed JavaScript"
                     }), React.createElement(Spectacle.Notes, {
                       children: "TypeScript, Flow"
                     })), React.createElement(Spectacle.Slide, {
@@ -590,7 +603,401 @@ function Presentation(Props) {
                       children: "By the end of the decade, we were controlling so much more from our frontend code. Anybody build a simple fullstack app recently? Where was the most work done? You rendering business logic? Your state updates? \"Middleware\"? DB queries? Especially with tools like React and GraphQL, Redux, etc. Our frontend techonolgies smarter, and doing more lifting, so it's even more important to choose the right one. The one that will be easiest to write, maintain, and extend. "
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
-                    "zoom",
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "HOW SHOULD A WEB APP WORK?"
+                    }), React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "(Late 2010s EDITION)"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "React or another composable JS framework. Maybe if you're embracing trends, you are using a type system on top of JavaScript,like TypeScript or Flow."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "What does the future look like?"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: ""
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "React...again."
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "React pushed us towards functional, declarative UIs, with immutability baked in to the patterns and best practices. But not everyone embraced React's functional patterns and you could still write mutations."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "🎣"
+                    }), React.createElement(Spectacle.Appear, {
+                      children: React.createElement(Spectacle.Text, {
+                            textSize: "100",
+                            textColor: textColor,
+                            fit: false,
+                            children: "Hooks"
+                          })
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "Why? Why functional components? Why now stateful functional components? Why change the API so much? Performance? No. UX. Namely: Dev UX. How easy is this code to understand, maintain, and extend? How easy is it to Reason about?"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "How easy is my code to Reason about?"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "I will argue that this is the most important part of coding UI. We're not trying to beat a compiler. Or the plethora of abstraction layers before it is finally run in a form that a machine can understand. We are writing code for humans."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "What should a future framework look like?"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "So, we are at the present in my talk. We have some pretty awesome tools in our stack. Where do we go from here? What should a framework or language or set of tool in the future look like?"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Heading, {
+                      size: 4,
+                      textColor: textColor,
+                      lineHeight: "1",
+                      children: "It should be:"
+                    }), React.createElement(Spectacle.List, {
+                      children: null
+                    }, React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Type safe."
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Fast. Like, really, really fast."
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Less possible bugs."
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Easy to read and write."
+                              })
+                        })), React.createElement(Spectacle.Notes, {
+                      children: "our intellectual powers are rather geared to master static relations and that our powers to visualize processes evolving in time are relatively poorly developed. For that reason we should do (as wise programmers aware of our limitations) our utmost best to shorten the conceptual gap between the static program and the dynamic process, to make the correspondence between the program (spread out in text space) and the process (spread out in time) as trivial as possible. - Dijkstra"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Heading, {
+                      size: 4,
+                      textColor: textColor,
+                      lineHeight: "1",
+                      children: "A step further..."
+                    }), React.createElement(Spectacle.List, {
+                      children: null
+                    }, React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Less tooling & tooling boilerplate"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Immutable"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Pure"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Declarative. Fully embrace functional"
+                              })
+                        })), React.createElement(Spectacle.Notes, {
+                      children: "We're making a wishlist, right? So we can take it a step further. Less tooling = I want to focus on writing my UI, not configuring my setup."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Heading, {
+                      size: 4,
+                      textColor: textColor,
+                      lineHeight: "1",
+                      children: "Get crazy with it:"
+                    }), React.createElement(Spectacle.List, {
+                      children: null
+                    }, React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Type safe? How about 100% type safety and soundness coverage?!"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "ES2020? How about ES2030?!"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Run Anywhere. Super Fast and Natively!"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Write the React way."
+                              })
+                        })), React.createElement(Spectacle.Notes, {
+                      children: "Heck, let's go wild. I don't want the language features of today, I want the language features of 10 years from now!"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "THE FUTURE IS NOW."
+                    }), React.createElement(Spectacle.Appear, {
+                      children: React.createElement(Spectacle.Text, {
+                            textSize: "100",
+                            textColor: textColor,
+                            fit: false,
+                            children: "AND IT'S IN PROD..."
+                          })
+                    }), React.createElement(Spectacle.Notes, {
+                      children: ""
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "...AND USED BY HUNDREDS OF MILLIONS OF USERS"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: ""
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Image, {
+                      width: "100vw",
+                      src: reason
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "It's called ReasonML."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Heading, {
+                      size: 4,
+                      textColor: textColor,
+                      lineHeight: "1",
+                      children: "What is Reason?"
+                    }), React.createElement(Spectacle.List, {
+                      children: null
+                    }, React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "NOT Machine Learning"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Made by Jordan Walke (who?)"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Syntax over OCaml for easy onboarding JS/React devs"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Used at FB."
+                              })
+                        })), React.createElement(Spectacle.Notes, {
+                      children: "Heck, let's go wild. I don't want the language features of today, I want the language features of 10 years from now!"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Heading, {
+                      size: 4,
+                      textColor: textColor,
+                      lineHeight: "1",
+                      children: "Why use Reason?"
+                    }), React.createElement(Spectacle.List, {
+                      children: null
+                    }, React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "\"Picked up where React left off\""
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Pure, Immutable, Functional by default"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "\"ES2030 now.\" Advanced language features."
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Run natively, tiny & fast af"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "JS Everywhere! ...is broken"
+                              })
+                        })), React.createElement(Spectacle.Notes, {
+                      children: "Heck, let's go wild. I don't want the language features of today, I want the language features of 10 years from now!"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Heading, {
+                      size: 4,
+                      textColor: textColor,
+                      lineHeight: "1",
+                      children: "How Reason Works"
+                    }), React.createElement(Spectacle.List, {
+                      children: null
+                    }, React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "The AST"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Everything's a module*"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Interop/FFI"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "\"React pricinples brought to the language level\""
+                              })
+                        })), React.createElement(Spectacle.Notes, {
+                      children: "Heck, let's go wild. I don't want the language features of today, I want the language features of 10 years from now!"
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Heading, {
+                      size: 4,
+                      textColor: textColor,
+                      lineHeight: "1",
+                      children: "Reason Ecosystem"
+                    }), React.createElement(Spectacle.List, {
+                      children: null
+                    }, React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "ReasonML"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Target web? => BuckleScript"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Want to write React? => ReasonReact"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Want to write ReactNative? => ReasonReactNative"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Want to run Jest-like tests? => Rely"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "Use a better Electron? => ReveryUI"
+                              })
+                        })), React.createElement(Spectacle.Notes, {
+                      children: "Let's learn more about these with some demos."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
                     /* [] */0
                   ],
                   children: React.createElement(Spectacle.Heading, {
@@ -601,14 +1008,152 @@ function Presentation(Props) {
                       })
                 }), React.createElement(Spectacle.CodePane, {
                   lang: "reason",
-                  source: "    let age = 25;\n    Js.log(\"My age is \" + age); /* Nope */\n    Js.log(\"My age is \", age); /* My age is 25 */",
+                  source: "    let age = 25;",
                   margin: "auto",
                   overflow: "overflow",
                   textSize: 30
-                }));
+                }), React.createElement(Spectacle.CodePane, {
+                  lang: "reason",
+                  source: "    let age = 25;\n    Js.log(\"My age is \" + age); /* Nope */",
+                  margin: "auto",
+                  overflow: "overflow",
+                  textSize: 30
+                }), React.createElement(Spectacle.CodePane, {
+                  lang: "reason",
+                  source: "    let age = 25;\n    Js.log(\"My age is \" + age); /* Nope */\n    Js.log2(\"My age is \", age); /* \"My age is \" 25 */",
+                  margin: "auto",
+                  overflow: "overflow",
+                  textSize: 30
+                }), React.createElement(Spectacle.CodePane, {
+                  lang: "reason",
+                  source: "    let age = 25;\n    Js.log(\"My age is \" + age); /* Nope */\n    Js.log2(\"My age is \", age); /* \"My age is \" 25 */\n    Js.log(\"My age is \" ++ string_of_int(age)); /* \"My age is 25\" */",
+                  margin: "auto",
+                  overflow: "overflow",
+                  textSize: 30
+                }), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "Shut up."
+                    }), React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "Show me something cool."
+                    }), React.createElement(Spectacle.Notes, {
+                      children: ""
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "Meta Demo"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "This presentation was written in ReasonReact + custom bindings for Spectacle. Checkout out how fast bucklescript works."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "Revery Demo"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "Ken Wheeler is a beast. He also love beats. He modeled a real life beat making hardware into a reason app, using revery. And the archive is 2mbs. And check out how fast it loads. Bye bye, electron."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "Reason React Native"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "React Navigation bindings. I'm writing a production app in Reason React Native, and my biggest fear was being limited in what libs I could use. Something about 'use any packages from the js world' somehow didn't click right away. Now, I spend almost no time wrapping a library (if there are reason bindings) and spend way more time choosing libs and writing ui."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "Reason React Native"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "React Navigation bindings. I'm writing a production app in Reason React Native, and my biggest fear was being limited in what libs I could use. Something about 'use any packages from the js world' somehow didn't click right away. Now, I spend almost no time wrapping a library (if there are reason bindings) and spend way more time choosing libs and writing ui."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Heading, {
+                      size: 4,
+                      textColor: textColor,
+                      lineHeight: "1",
+                      children: "Why & Why Not Reason"
+                    }), React.createElement(Spectacle.List, {
+                      children: null
+                    }, React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "ReasonML"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "(+) type inference for free"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "(+) easier to reason about"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "(+) less bugs"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "(+) easy to pickup for JS/React devs"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "(+) fast, native, cross-platform"
+                              })
+                        }), React.createElement(Spectacle.Appear, {
+                          children: React.createElement(Spectacle.ListItem, {
+                                textSize: textSize,
+                                children: "(-) new sytnax to learn"
+                              })
+                        })), React.createElement(Spectacle.Notes, {
+                      children: "Heck, let's go wild. I don't want the language features of today, I want the language features of 10 years from now!"
+                    })));
 }
 
-var textSize = "30";
+var listItemTextSize = "20";
 
 var size = 3;
 
@@ -621,6 +1166,7 @@ exports.colorConfig = colorConfig;
 exports.fontConfig = fontConfig;
 exports.theme = theme;
 exports.textSize = textSize;
+exports.listItemTextSize = listItemTextSize;
 exports.size = size;
 exports.textColor = textColor;
 exports.fit = fit;
@@ -634,6 +1180,7 @@ exports.timeline = timeline;
 exports.timeline2 = timeline2;
 exports.stacksplit1 = stacksplit1;
 exports.stacksplit2 = stacksplit2;
+exports.reason = reason;
 exports.IntroNotes = IntroNotes;
 exports.SimpleSlide = SimpleSlide;
 exports.Code = Code;

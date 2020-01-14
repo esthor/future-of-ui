@@ -188,6 +188,8 @@ Pete Hunt: React: Rethinking best practices -- JSConf EU - <https://www.youtube.
 
 A Case against the GO TO Statement. - Edgar W.Dijkstra - <https://www.cs.utexas.edu/users/EWD/transcriptions/EWD02xx/EWD215.html>
 
+Kyle Simpson - Code for Humans - Frontend Masters Talk.
+
 ## History
 
 JavaScript start and 1999 quote promising future
@@ -267,7 +269,7 @@ OCaml and battle-tested type system
 Easy to Read
 ReasonML is designed to be easy to reason about and extend
 Less bugs
-Really, really fast
+Really, really fast. OCaml native startup time is single digit milliseconds. BSB is 100 milliseconds to compile reason to JS.
 Target native
 You're already compiling-to-js...so which do you want to compile from?
 You can interop with all of JS ecosystem, but also OCaml, and Reason
@@ -290,6 +292,7 @@ ReasonReactNative
 ReasonNative - `fnm` and `Oni2`
     - Rely
 esy
+...and a lot more (growing Reason community, JS, OCaml)
 
 ## What can you do with Reason
 
