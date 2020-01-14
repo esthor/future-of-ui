@@ -35,10 +35,13 @@ module IntroNotes = {
   let make = () => {
     <div>
       <p> {rs("So, this is a fairly broad scope for a talk.")} </p>
+      <p> {rs("My talk comes with a few caveats.")} </p>
+      <p> {rs("1. This isn't exhaustive. I will not mention some things that are important, not because I think they are not important, but because I don't have time.")} </p>
+      <p> {rs("2. Full disclosure: I'm not a mystic. I don't know what the future will be. My basis for this talk is just me extrapolating from trends and technologies now, to see what will become possible. I will try to convince you by the end of a pretty tangible, real future, but I could be 100% wrong. Doesn't mean I won't try to convince you though.")} </p>
       <p>
         {rs(
-           "'UI Programming' is a giant topic.~\n
-          So, what I'm going to attempt to do here is talk about what I think are relevant parts to this topic specifically for React devs and people working on modern apps written in JavaScript.",
+           "3. 'UI Programming' is a giant topic.
+          So, I've purposely geared this talk specifically for React devs and people working on modern apps written in JavaScript.",
          )}
       </p>
     </div>;
@@ -291,6 +294,14 @@ let make = () => {
       </Notes>
     </Slide>
     <Slide transition=["slide"]>
+      <Text textSize="100" textColor fit=false> {rs("2010s")} </Text>
+      <Notes>
+        {rs(
+           "2010s.",
+         )}
+      </Notes>
+    </Slide>
+    <Slide transition=["slide"]>
       <Text textSize="100" textColor fit=false> {rs("Node & npm")} </Text>
       <Notes>
         {rs(
@@ -369,6 +380,19 @@ let make = () => {
       <Notes> {rs("TypeScript, Flow")} </Notes>
     </Slide>
     <Slide transition=["slide"]>
+      <Text textSize="100" textColor fit=false>
+        {rs("HOW SHOULD A WEB APP WORK?")}
+      </Text>
+      <Text textSize="100" textColor fit=false>
+        {rs("(Late 2010s EDITION)")}
+      </Text>
+      <Notes>
+        {rs(
+           "React or another composable JS framework. Maybe if you're embracing trends, you are using a type system on top of JavaScript,like TypeScript or Flow.",
+         )}
+      </Notes>
+    </Slide>
+    <Slide transition=["slide"]>
       <Image src=stacksplit1 width="100vw" />
       <Notes>
         {rs(
@@ -381,19 +405,6 @@ let make = () => {
       <Notes>
         {rs(
            "By the end of the decade, we were controlling so much more from our frontend code. Anybody build a simple fullstack app recently? Where was the most work done? You rendering business logic? Your state updates? \"Middleware\"? DB queries? Especially with tools like React and GraphQL, Redux, etc. Our frontend techonolgies smarter, and doing more lifting, so it's even more important to choose the right one. The one that will be easiest to write, maintain, and extend. ",
-         )}
-      </Notes>
-    </Slide>
-    <Slide transition=["slide"]>
-      <Text textSize="100" textColor fit=false>
-        {rs("HOW SHOULD A WEB APP WORK?")}
-      </Text>
-      <Text textSize="100" textColor fit=false>
-        {rs("(Late 2010s EDITION)")}
-      </Text>
-      <Notes>
-        {rs(
-           "React or another composable JS framework. Maybe if you're embracing trends, you are using a type system on top of JavaScript,like TypeScript or Flow.",
          )}
       </Notes>
     </Slide>
@@ -543,7 +554,7 @@ let make = () => {
     </Slide>
     <Slide transition=["slide"]>
       <Heading textColor lineHeight="1" size=4>
-        {rs("What is Reason?")}
+        {rs("What is ReasonML?")}
       </Heading>
       <List>
         <Appear>
@@ -561,7 +572,7 @@ let make = () => {
       </List>
       <Notes>
         {rs(
-           "Heck, let's go wild. I don't want the language features of today, I want the language features of 10 years from now!",
+           "",
          )}
       </Notes>
     </Slide>
@@ -594,7 +605,7 @@ let make = () => {
       </List>
       <Notes>
         {rs(
-           "Heck, let's go wild. I don't want the language features of today, I want the language features of 10 years from now!",
+           "",
          )}
       </Notes>
     </Slide>

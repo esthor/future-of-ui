@@ -47,7 +47,7 @@ var stacksplit2 = ( require('../assets/stacksplit2.png'));
 var reason = ( require('../assets/reason.png'));
 
 function Presentation$IntroNotes(Props) {
-  return React.createElement("div", undefined, React.createElement("p", undefined, "So, this is a fairly broad scope for a talk."), React.createElement("p", undefined, "'UI Programming' is a giant topic.~\n\n          So, what I'm going to attempt to do here is talk about what I think are relevant parts to this topic specifically for React devs and people working on modern apps written in JavaScript."));
+  return React.createElement("div", undefined, React.createElement("p", undefined, "So, this is a fairly broad scope for a talk."), React.createElement("p", undefined, "My talk comes with a few caveats."), React.createElement("p", undefined, "1. This isn't exhaustive. I will not mention some things that are important, not because I think they are not important, but because I don't have time."), React.createElement("p", undefined, "2. Full disclosure: I'm not a mystic. I don't know what the future will be. My basis for this talk is just me extrapolating from trends and technologies now, to see what will become possible. I will try to convince you by the end of a pretty tangible, real future, but I could be 100% wrong. Doesn't mean I won't try to convince you though."), React.createElement("p", undefined, "3. 'UI Programming' is a giant topic.\n          So, I've purposely geared this talk specifically for React devs and people working on modern apps written in JavaScript."));
 }
 
 var IntroNotes = {
@@ -439,6 +439,19 @@ function Presentation(Props) {
                       textSize: "100",
                       textColor: textColor,
                       fit: false,
+                      children: "2010s"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "2010s."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
                       children: "Node & npm"
                     }), React.createElement(Spectacle.Notes, {
                       children: "Node & npm and CommonJS modules really changed the way we develop code. Run JS on the server, run it in the client. Look for a library on npm, `npm install` nd now you're cooking with gas. The 2010s was like an explosive rebirth of JS."
@@ -585,6 +598,24 @@ function Presentation(Props) {
                     /* [] */0
                   ],
                   children: null
+                }, React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "HOW SHOULD A WEB APP WORK?"
+                    }), React.createElement(Spectacle.Text, {
+                      textSize: "100",
+                      textColor: textColor,
+                      fit: false,
+                      children: "(Late 2010s EDITION)"
+                    }), React.createElement(Spectacle.Notes, {
+                      children: "React or another composable JS framework. Maybe if you're embracing trends, you are using a type system on top of JavaScript,like TypeScript or Flow."
+                    })), React.createElement(Spectacle.Slide, {
+                  transition: /* :: */[
+                    "slide",
+                    /* [] */0
+                  ],
+                  children: null
                 }, React.createElement(Spectacle.Image, {
                       width: "100vw",
                       src: stacksplit1
@@ -601,24 +632,6 @@ function Presentation(Props) {
                       src: stacksplit2
                     }), React.createElement(Spectacle.Notes, {
                       children: "By the end of the decade, we were controlling so much more from our frontend code. Anybody build a simple fullstack app recently? Where was the most work done? You rendering business logic? Your state updates? \"Middleware\"? DB queries? Especially with tools like React and GraphQL, Redux, etc. Our frontend techonolgies smarter, and doing more lifting, so it's even more important to choose the right one. The one that will be easiest to write, maintain, and extend. "
-                    })), React.createElement(Spectacle.Slide, {
-                  transition: /* :: */[
-                    "slide",
-                    /* [] */0
-                  ],
-                  children: null
-                }, React.createElement(Spectacle.Text, {
-                      textSize: "100",
-                      textColor: textColor,
-                      fit: false,
-                      children: "HOW SHOULD A WEB APP WORK?"
-                    }), React.createElement(Spectacle.Text, {
-                      textSize: "100",
-                      textColor: textColor,
-                      fit: false,
-                      children: "(Late 2010s EDITION)"
-                    }), React.createElement(Spectacle.Notes, {
-                      children: "React or another composable JS framework. Maybe if you're embracing trends, you are using a type system on top of JavaScript,like TypeScript or Flow."
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -850,7 +863,7 @@ function Presentation(Props) {
                       size: 4,
                       textColor: textColor,
                       lineHeight: "1",
-                      children: "What is Reason?"
+                      children: "What is ReasonML?"
                     }), React.createElement(Spectacle.List, {
                       children: null
                     }, React.createElement(Spectacle.Appear, {
@@ -874,7 +887,7 @@ function Presentation(Props) {
                                 children: "Used at FB."
                               })
                         })), React.createElement(Spectacle.Notes, {
-                      children: "Heck, let's go wild. I don't want the language features of today, I want the language features of 10 years from now!"
+                      children: ""
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
@@ -914,7 +927,7 @@ function Presentation(Props) {
                                 children: "JS Everywhere! ...is broken"
                               })
                         })), React.createElement(Spectacle.Notes, {
-                      children: "Heck, let's go wild. I don't want the language features of today, I want the language features of 10 years from now!"
+                      children: ""
                     })), React.createElement(Spectacle.Slide, {
                   transition: /* :: */[
                     "slide",
